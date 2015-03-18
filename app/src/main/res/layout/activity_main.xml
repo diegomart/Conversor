@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/Panel"
+    android:touchscreenBlocksFocus="false"
+    android:background="#7ef1e7b4">
+
+    <TextView
+        android:text="@string/Pesos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pesos"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:layout_below="@+id/EditDolar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Dolares"
+        android:id="@+id/Dolares"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:layout_below="@+id/EditCambio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/EditDolar"
+        android:hint="Dolares"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/Dolares"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#fff3ffeb" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:id="@+id/btnconversor"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/RadPesoADolar"
+        android:layout_alignRight="@+id/RadPesoADolar"
+        android:layout_alignEnd="@+id/RadPesoADolar" />
+
+    <TextView
+        android:text="Tipo de Cambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:id="@+id/RadPesoADolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesos a Dólares"
+        android:checked="false"
+        android:layout_below="@+id/RadDolarAPeso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:id="@+id/RadDolarAPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dólares a Pesos"
+        android:checked="true"
+        android:layout_below="@+id/Pesos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/EditCambio"
+        android:hint="Cambio"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/RadDolarAPeso"
+        android:layout_toEndOf="@+id/RadDolarAPeso"
+        android:backgroundTint="#fff3ffeb" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="LIMPIAR"
+        android:id="@+id/btnclear"
+        android:layout_alignTop="@+id/btnconversor"
+        android:layout_alignRight="@+id/EditPesos"
+        android:layout_alignEnd="@+id/EditPesos" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/EditPesos"
+        android:hint="Pesos"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/Pesos"
+        android:layout_alignRight="@+id/EditDolar"
+        android:layout_alignEnd="@+id/EditDolar"
+        android:backgroundTint="#fff3ffeb" />
+
+
+</RelativeLayout>

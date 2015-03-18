@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Pesos">Pesos</string>
+    <string name="Dolares">Dolares</string>
+    <string name="TipoCambio">Tipo de cambio</string>
+</resources>
